@@ -175,7 +175,6 @@ class Window(QMainWindow):
         self.btn_clear.resize(100, 40)
         self.btn_clear.clicked.connect(self.btn_clear_clicked)
 
-
     def _menubar(self):
         menuBar = self.menuBar()
         fileMenu = QMenu('&File', self)
@@ -496,7 +495,6 @@ class Window(QMainWindow):
             transform = et.XSLT(xslt)
             new_dom = transform(dom)
             new_dom.write("output.html", pretty_print=True)
-
             res = QMessageBox.question(self, '', 'Transformation done! \nOpen file?')
             if res == QMessageBox.Yes:
                 webbrowser.open('output.html')

@@ -5,7 +5,6 @@ import xml.sax
 from bs4 import BeautifulSoup
 
 
-
 class IStrategy(ABC):
     @abstractmethod
     def search(self, path, info):
