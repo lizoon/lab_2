@@ -1,0 +1,80 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<educationDataBase>
+	<person>
+		<name>Kate</name>
+		<surname>Zdebska</surname>
+		<patronym>Sergiivna</patronym>
+		<faculty>Mathematic</faculty>
+		<department>Computational mathematics</department>
+		<education>Base</education>
+		<place_educ>KNU</place_educ>
+		<date_begin>
+			<number>1</number>
+			<month>september</month>
+			<year>2020</year>
+		</date_begin>
+		<date_end>
+			<number>?</number>
+			<month>?</month>
+			<year>?</year>
+		</date_end>
+	</person>
+	<person>
+		<name>Pavlo</name>
+		<surname>Plusnin</surname>
+		<patronym>Petrov</patronym>
+		<faculty>SA</faculty>
+		<department>Mathematical Technologies</department>
+		<education>Postgraduate</education>
+		<place_educ>KNU</place_educ>
+		<date_begin>
+			<number>1</number>
+			<month>september</month>
+			<year>1993</year>
+		</date_begin>
+		<date_end>
+			<number>24</number>
+			<month>april</month>
+			<year>1999</year>
+		</date_end>
+	</person>
+	<person>
+		<name>Petro</name>
+		<surname>Mironov</surname>
+		<patronym>Valeriivoch</patronym>
+		<faculty>SA</faculty>
+		<department>Operations Research</department>
+		<education>Basic</education>
+		<place_educ>KPI</place_educ>
+		<date_begin>
+			<number>14</number>
+			<month>october</month>
+			<year>2015</year>
+		</date_begin>
+		<date_end>
+			<number>30</number>
+			<month>april</month>
+			<year>2019</year>
+		</date_end>
+	</person>
+	<person>
+		<name>Evgeniy</name>
+		<surname>Goncharenko</surname>
+		<patronym>Vasylovych</patronym>
+		<faculty>Software engineering</faculty>
+		<department>Intelligent software systems</department>
+		<education>Doctoral</education>
+		<place_educ>KPI</place_educ>
+		<date_begin>
+			<number>2</number>
+			<month>september</month>
+			<year>1970</year>
+		</date_begin>
+		<date_end>
+			<number>3</number>
+			<month>may</month>
+			<year>1982</year>
+		</date_end>
+	</person>
+</educationDataBase>
+ 
