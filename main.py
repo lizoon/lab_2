@@ -341,7 +341,6 @@ class Window(QMainWindow):
         self.month_end.setCurrentText('')
         self.year_end.setCurrentText('')
 
-
 # читаємо дані з хмл файлу, щоб заповнити комбобокси
     def read(self, tree):
         root1 = tree.getroot()
