@@ -24,19 +24,16 @@ class DOM(IStrategy):
             root2 = child1.getchildren()
             if info[0] == '' or root2[0].text == info[0]:
                 inf.name = root2[0].text
-                print(root2[0].text)
             else:
                 flag = False
 
             if info[1] == '' or root2[1].text == info[1]:
                 inf.surname = root2[1].text
-                print(root2[1].text)
             else:
                 flag = False
 
             if info[2] == '' or root2[2].text == info[2]:
                 inf.patronym = root2[2].text
-                print(root2[2].text)
             else:
                 flag = False
 

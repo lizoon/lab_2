@@ -29,12 +29,13 @@ class Window(QMainWindow):
         self.months_end = {''}
         self.years_end = {''}
 
-        self.resize(1300, 700)
+        self.resize(1600, 700)
+        self.setWindowTitle('Welcome!')
 
         self.build_box(self.tree_)
 
         self.text = QTextEdit(self)
-        self.text.resize(580, 630)
+        self.text.resize(880, 630)
         self.text.move(700, 50)
 
         self.name_file = QLabel('Current file:', self)
@@ -273,9 +274,8 @@ class Window(QMainWindow):
             self.month_end.setCurrentText('')
             self.year_end.addItem('')
             self.year_end.setCurrentText('')
-
         except Exception:
-            print('')
+            sh = QMessageBox.information(self, '', 'You don\'t choose file!')
 
 # допоміжна ф-я: додати до комбобоксів множину вибору
     def add_items(self, x: QComboBox, item: List):
@@ -439,21 +439,54 @@ class Window(QMainWindow):
         i = 0
         for item in li:
             i += 1
-            self.text.append(f'{i}.\nName: {item.name}')
-            self.text.append(f'Surname: {item.surname}')
-            self.text.append(f'Patronymic: {item.patronym}')
-            self.text.append(f'Faculty: {item.faculty}')
-            self.text.append(f'Department: {item.department}')
-            self.text.append(f'Education: {item.education}')
-            self.text.append(f'Place of education: {item.place}')
-            self.text.append(f'Date of beginning of study:\n'
-                             f'\tDay: {item.date_begin[0]}\n'
-                             f'\tMonth: {item.date_begin[1]}\n'
-                             f'\tYear: {item.date_begin[2]}\n')
-            self.text.append(f'Date of ending of education:\n'
-                             f'\tDay: {item.date_end[0]}\n'
-                             f'\tMonth: {item.date_end[1]}\n'
-                             f'\tYear: {item.date_end[2]}\n')
+            self.text.append(f'{i}.'
+                             f'<table border = "2" bordercolor = "#E0BFA6">'
+                             f'<tr>'
+                             f'<th rowspan = "3" align = "center">Name</th>'
+                             f'<th rowspan = "3" align = "center">Surname</th>'
+                             f'<th rowspan = "3" align = "center">Patronym</th>'
+                             f'<th rowspan = "3" align = "center">Faculty</th>'
+                             f'<th rowspan = "3" align = "center">Department</th>'
+                             f'<th rowspan = "3" align = "center">Education</th>'
+                             f'<th rowspan = "3" align = "center">Place of education</th>'
+                             f'<th align = "center">Day of beginning of education</th>'
+						     f'<th align = "center">Day of ending of education</th>'
+                             f'</tr>'
+                             f'<tr>'
+						     f'<th align = "center">Month of beginning of education</th>'
+						     f'<th align = "center">Month of ending of education</th>'
+					         f'</tr>'
+					         f'<tr>'
+						     f'<th align = "center">Year of beginning of education</th>'
+						     f'<th align = "center">Year of ending of education</th>'
+					         f'</tr>'
+                             f'<tr><td rowspan = "3" align = "center">'
+                             f'{item.name}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.surname}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.patronym}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.faculty}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.department}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.education}</td>'
+                             f'<td rowspan = "3" align = "center">'
+                             f'{item.place}</td>'
+                             f'<td align = "center">'
+                             f'{item.date_begin[0]}</td>'
+                             f'<td align = "center">'
+                             f'{item.date_end[0]}</td>'
+                             f'<tr><td align = "center">'
+                             f'{item.date_begin[1]}</td>'
+                             f'<td align = "center">'
+                             f'{item.date_begin[2]}</td></tr>'
+                             f'<tr><td align = "center">'
+                             f'{item.date_end[1]}</td>'
+                             f'<td align = "center">'
+                             f'{item.date_end[2]}</td></tr></tr>'
+                             f'</table>')
 
     def transform(self):
         if self.tree == '':
