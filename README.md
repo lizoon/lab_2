@@ -26,7 +26,7 @@
 <h4>You can <b>Clean</b> it</h4>
 <img src="https://user-images.githubusercontent.com/89095210/164197930-4ba061cc-d741-4a1d-b29a-ecd1313ba761.png">
 
-<h3>and transform to .html via .xsl</h3>
+<h3>and transform to .html via .xslt</h3>
 
 <h1>Requirements:</h1>
 <ul>
