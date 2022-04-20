@@ -22,8 +22,7 @@
         <img src="https://user-images.githubusercontent.com/89095210/164197201-cdc63e9a-169b-4de5-a758-05d15fe99aeb.png">
         </ul>
 
-<h3>Here is the result:</h3>
-<h4>You can <b>Clean</b> it</h4>
+<h3>Here is the result and you can Clean it:</h3>
 <img src="https://user-images.githubusercontent.com/89095210/164197930-4ba061cc-d741-4a1d-b29a-ecd1313ba761.png">
 
 <h3>and transform to .html via .xslt</h3>
